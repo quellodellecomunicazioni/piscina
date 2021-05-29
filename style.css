@@ -12,7 +12,7 @@ general
 
 .button{display: inline-block; background: #fff; color:#000;padding: 15px 30px; border-radius:3px; text-decoration: none;}
 p{line-height: 22px}
-a{color:#16dd94}
+a{text-decoration: none;}
 a:hover{color: #1af3a4;}
 /*-----------------------------
 header
@@ -32,7 +32,7 @@ header
 Cover
 -----------------------------*/
 .cover{height:70%;
-	background-image: url("https://source.unsplash.com/category/buildings");
+	background-image: url("https://source.unsplash.com/1Z_BVuDS1h4");
 	background-size: cover;
 	-o-background-size: cover;
 	-moz-background-size: cover;
@@ -86,7 +86,7 @@ Footer
 /*-----------------------------
 Single
 -----------------------------*/
-.panel{}
+
 .panel__copy{max-width: 800px; margin: 0px auto; margin-top: -60px; background: #fff; padding:20px 40px;position: relative; z-index: 1}
 .panel__copy__meta{font-weight: bold;font-size: 16px;	}
 .panel__copy__title{font-size: 32px;}
@@ -95,9 +95,32 @@ Single
 /*-----------------------------
 Form
 -----------------------------*/
-.form__time__choice{display: block;text-align: center;padding: 5%;}
-.form__number__choice{display: block;text-align: center;margin-top: 10px;padding: 5%;}
-.data__validation{text-align: center;margin-top: 20px;}
+.wrapper{display: block;text-align: center;padding: 5%;}
+.wrapper input[type="submit"]{margin-top: 20px;}
+.wrapper input[type="text"]{text-align: center;}
+.mattina__pomeriggio{text-align: center;height: 200px;padding: 5%;}
+.mattina__pomeriggio a{margin: 20px;font-size: 28px;}
+.mattina__pomeriggio__copy{padding: 20%;}
+
+
+/*-----------------------------
+Calendar
+-----------------------------*/
+.calendar__title{text-align: center;}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	padding: 10px;
+  }
+  .grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+  }
+
 
 
 /*-----------------------------
@@ -135,8 +158,11 @@ Smartphone
 	.banner__copy{width:100%;height:50%}
 
 	/* Form */
-	.white__space{height: 120px;}
-}
+	.white__space{height: 80px;}
+	.white__space__calendar{height: 70px;}
+
+	/* Calendar */
+	
 
 
 /* clearfix */
@@ -158,4 +184,5 @@ Smartphone
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
 }

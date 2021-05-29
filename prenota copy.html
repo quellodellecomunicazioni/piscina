@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+        <link rel="stylesheet" href="style.css">
+    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    </head>
+    <body>
+    
+    <header class="header clearfix">
+        <a href="index.html" class="header__logo">PISCINA</a>
+        <a href="" class="header__icon-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul class="header__menu animate">
+            <li class="header__menu__item"><a href="index.html">Home</a></li>
+            <li class="header__menu__item"><a href="giugno.html">GIUGNO</a></li>
+            <li class="header__menu__item"><a href="luglio.html">LUGLIO</a></li>
+            <li class="header__menu__item"><a href="agosto.html">AGOSTO</a></li>
+            <li class="header__menu__item"><a href="settembre.html">SETTEMBRE</a></li>
+        </ul>
+    </header>
+    
+    <section class="white__space">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+
+    <div class="wrapper">
+        <form class="form">
+            <fieldset>
+                <legend>FASCIA ORARIA</legend>
+                <p><label><input type="radio" value="mattino" name="orario" checked="checked" class="orario"/> 9:00-13:30</label></p>
+                <p><label><input type="radio" value="pomeriggio" name="orario" checked="checked" class="orario"/> 14:30-19:00</label></p>
+                <p><label><input type="radio" value="giornata" name="orario" checked="checked" class="orario"/> 9:00-19:00</label></p>
+            </fieldset>
+            <fieldset class="fieldset_appartamento">
+                <legend>APPARTAMENTO</legend>
+                <input class="text" type="text" name="numero" list="appartamenti" required/>
+            <datalist id="appartamenti">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+                <option value="11"></option>
+                <option value="12"></option>
+                <option value="13"></option>
+                <option value="14"></option>
+                <option value="15"></option>
+                <option value="16"></option>
+                <option value="17"></option>
+                <option value="18"></option>
+                <option value="19"></option>
+                <option value="20"></option>
+                <option value="21"></option>
+                <option value="22"></option>
+                <option value="23"></option>
+                <option value="24"></option>
+                <option value="25"></option>
+                <option value="26"></option>
+                <option value="27"></option>
+                <option value="28"></option>
+                <option value="29"></option>
+                <option value="30"></option>
+                <option value="31"></option>
+                <option value="32"></option>
+                <option value="33"></option>
+                <option value="34"></option>
+                <option value="35"></option>
+                <option value="36"></option>
+                <option value="37"></option>
+                <option value="38"></option>
+                <option value="39"></option>
+                <option value="40"></option>
+                <option value="41"></option>
+                <option value="42"></option>
+                <option value="43"></option>
+                <option value="44"></option>
+                <option value="45"></option>
+                <option value="46"></option>
+                <option value="47"></option>
+                <option value="48"></option>
+                <option value="49"></option>
+                <option value="50"></option>
+                <option value="51"></option>
+                <option value="52"></option>
+                <option value="53"></option>
+                <option value="54"></option>
+                <option value="55"></option>
+                <option value="56"></option>
+                <option value="57"></option>
+                <option value="58"></option>
+                <option value="59"></option>
+                <option value="60"></option>
+            </datalist>
+            </fieldset>
+            
+            <input class="submit" type="submit" value="ASSEGNA" name="submit">
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+
+                $(".header__icon-bar").click(function(e){
+
+                    $(".header__menu").toggleClass('is-open');
+                    e.preventDefault();
+
+                });
+            });
+    </script>
+
+    <script>
+        const wrapper = document.querySelector('.wrapper'),
+            form = wrapper.querySelectorAll('.form'),
+            submitInput = form[0].querySelector('input[type="submit"]');
+
+        function getDataForm(e){
+            e.preventDefault();
+            var formData = new FormData(form[0]);
+            alert(formData.get('numero') + ' - ' + formData.get('orario'));
+        }
+        document.addEventListener('DOMContentLoaded', function(){
+            submitInput.addEventListener('click',getDataForm,false);
+        }, false);
+    </script>
+
+
+    </body>
+</html>

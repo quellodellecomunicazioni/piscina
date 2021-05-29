@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+        <link rel="stylesheet" href="style.css">
+    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    </head>
+    <body>
+    
+    <header class="header clearfix">
+        <a href="index.html" class="header__logo">PISCINA</a>
+        <a href="" class="header__icon-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul class="header__menu animate">
+            <li class="header__menu__item"><a href="index.html">HOME</a></li>
+            <li class="header__menu__item"><a href="giugno.html">GIUGNO</a></li>
+            <li class="header__menu__item"><a href="luglio.html">LUGLIO</a></li>
+            <li class="header__menu__item"><a href="agosto.html">AGOSTO</a></li>
+            <li class="header__menu__item"><a href="settembre.html">SETTEMBRE</a></li>
+        </ul>
+    </header>
+
+    <section class="white__space__calendar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+
+    <div class="calendar__title">
+        <h1>GIUGNO</h1>
+    </div>
+
+    <div class="grid-container">
+        <a href="prenota.html"><div class="grid-item">1</div></a>
+        <a href="prenota.html"><div class="grid-item">2</div></a>
+        <a href="prenota.html"><div class="grid-item">3</div></a>  
+        <a href="prenota.html"><div class="grid-item">4</div></a>
+        <a href="prenota.html"><div class="grid-item">5</div></a>
+        <a href="prenota.html"><div class="grid-item">6</div></a>  
+        <a href="prenota.html"><div class="grid-item">7</div></a>
+        <a href="prenota.html"><div class="grid-item">8</div></a>
+        <a href="prenota.html"><div class="grid-item">9</div></a>  
+        <a href="prenota.html"><div class="grid-item">10</div></a>
+        <a href="prenota.html"><div class="grid-item">11</div></a>
+        <a href="prenota.html"><div class="grid-item">12</div></a>
+        <a href="prenota.html"><div class="grid-item">13</div></a>  
+        <a href="prenota.html"><div class="grid-item">14</div></a>
+        <a href="prenota.html"><div class="grid-item">15</div></a>
+        <a href="prenota.html"><div class="grid-item">16</div></a>  
+        <a href="prenota.html"><div class="grid-item">17</div></a>
+        <a href="prenota.html"><div class="grid-item">18</div></a>
+        <a href="prenota.html"><div class="grid-item">19</div></a>  
+        <a href="prenota.html"><div class="grid-item">20</div></a>  
+        <a href="prenota.html"><div class="grid-item">21</div></a>
+        <a href="prenota.html"><div class="grid-item">22</div></a>
+        <a href="prenota.html"><div class="grid-item">23</div></a>  
+        <a href="prenota.html"><div class="grid-item">24</div></a>
+        <a href="prenota.html"><div class="grid-item">25</div></a>
+        <a href="prenota.html"><div class="grid-item">26</div></a>  
+        <a href="prenota.html"><div class="grid-item">27</div></a>
+        <a href="prenota.html"><div class="grid-item">28</div></a>
+        <a href="prenota.html"><div class="grid-item">29</div></a>  
+        <a href="prenota.html"><div class="grid-item">30</div></a>  
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+
+                $(".header__icon-bar").click(function(e){
+
+                    $(".header__menu").toggleClass('is-open');
+                    e.preventDefault();
+
+                });
+            });
+    </script>
+
+    </body>
+</html>
