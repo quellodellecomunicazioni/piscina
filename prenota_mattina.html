@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
@@ -9,10 +8,8 @@
     
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     </head>
     <body>
-    
     <header class="header clearfix">
         <a href="index.html" class="header__logo">PISCINA</a>
         <a href="" class="header__icon-bar">
@@ -28,13 +25,11 @@
             <li class="header__menu__item"><a href="settembre.html">SETTEMBRE</a></li>
         </ul>
     </header>
-    
     <section class="white__space">
         <span></span>
         <span></span>
         <span></span>
     </section>
-
     <div class="wrapper">
         <form class="form">
             <fieldset>
@@ -107,11 +102,9 @@
                 <option value="60"></option>
             </datalist>
             </fieldset>
-            
             <input class="submit" type="submit" value="ASSEGNA" name="submit">
         </form>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
             $(document).ready(function(){
@@ -120,35 +113,51 @@
 
                     $(".header__menu").toggleClass('is-open');
                     e.preventDefault();
-
                 });
             });
     </script>
-
     <script>
         const wrapper = document.querySelector('.wrapper'),
             form = wrapper.querySelectorAll('.form'),
             submitInput = form[0].querySelector('input[type="submit"]');
-
         function getDataForm(e){
             e.preventDefault();
             var formData = new FormData(form[0]);
             index = parseInt(formData.get('numero')) - 1
-            tmp = JSON.parse(localStorage.getItem('a0601'))
-            if(tmp[index] != 0){
-                alert(tmp[index])
+            tmp = JSON.parse(localStorage.getItem('m0601'))
+            if (tmp){
+                if(tmp[index] != 0){
+                    alert(tmp[index])
+                } else {
+                    qty = parseInt(localStorage.getItem('counter0601'))                    
+                    if (qty >= 20 && qty < 40){
+                        do {
+                            rand = Math.floor(Math.random()*20) + 21;
+                        } while (tmp.includes(rand))
+                        tmp[index] = rand
+                    } else if (qty < 20) {
+                        do {
+                            rand = Math.floor(Math.random()*20) + 1;
+                        } while (tmp.includes(rand))
+                        tmp[index] = rand
+                    } else {
+                        alert("Posti esauriti!")
+                    }
+                    localStorage.setItem('m0601',JSON.stringify(tmp))
+                    alert(rand);
+                    tmp2 = parseInt(localStorage.getItem('counter0601')) + 1
+                    localStorage.setItem('counter0601', tmp2)
+                } 
             } else {
-                rand = Math.floor(Math.random()*20) +1;
-                tmp[index] = rand
-                localStorage.setItem('a0601',JSON.stringify(tmp))
-                alert(rand); 
-            } 
+                tmp = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+                       0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+                localStorage.setItem('m0601',JSON.stringify(tmp))
+                localStorage.setItem('counter0601',0)
+            }
         }
         document.addEventListener('DOMContentLoaded', function(){
             submitInput.addEventListener('click',getDataForm,false);
         }, false);
     </script>
-
-
     </body>
 </html>
