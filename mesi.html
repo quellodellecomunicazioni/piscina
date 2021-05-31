@@ -11,7 +11,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
     
     </head>
-
     <body>
     
     <header class="header clearfix">
@@ -29,16 +28,40 @@
             <li class="header__menu__item"><a href="settembre.html" onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
         </ul>
     </header>
+    
+    <section class="white__space__mesi">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+    <section class="white__space__mesi">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
 
-    <section class="cover">
-		<div class="cover__filter"></div>
-		<div class="cover__caption">
-			<div class="cover__caption__copy">
-				<h1>ASSEGNAZIONE OMBRELLONI</h1>
-				<a href="mesi.html" class="button">PRENOTA</a>
-			</div>
-		</div>
-	</section>
+    <div class="mattina__pomeriggio">
+        <a href="giugno.html" onclick="localStorage.setItem('mese',6)">GIUGNO</a>
+        <section class="white__space__mesi">
+            <span></span>
+            <span></span>
+            <span></span>
+        </section>
+        <a href="luglio.html" onclick="localStorage.setItem('mese',7)">LUGLIO</a>
+        <section class="white__space__mesi">
+            <span></span>
+            <span></span>
+            <span></span>
+        </section>
+        <a href="agosto.html" onclick="localStorage.setItem('mese',8)">AGOSTO</a>
+        <section class="white__space__mesi">
+            <span></span>
+            <span></span>
+            <span></span>
+        </section>
+        <a href="settembre.html" onclick="localStorage.setItem('mese',9)">SETTEMBRE</a>
+    </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
