@@ -102,6 +102,7 @@ Form
 .mattina__pomeriggio a{margin: 20px;font-size: 28px;}
 .mattina__pomeriggio__copy{padding: 20%;}
 .fieldset{margin-bottom: 25px;}
+.status__appartamento{font-size: 12px;margin: 0px;position: absolute;vertical-align: middle;}
 
 
 /*-----------------------------
@@ -131,7 +132,6 @@ Tablet
 	/* banner */
 	.banner__image,
 	.banner__copy{width:50%;height:100%}
-
 }
 
 
@@ -164,8 +164,8 @@ Smartphone
 	.white__space__mesi{height: 50px;}
 	.white__space__prenota{height: 40px;}
 	.disponibili{font-size: 11px;margin-top: 0px;}
+	.status__subtitle{margin-top: -10px;}
 	
-
 
 /* clearfix */
 

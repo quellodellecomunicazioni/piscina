@@ -41,7 +41,7 @@
             </fieldset>
             <fieldset>
                 <legend>APPARTAMENTO</legend>
-                <input class="text" type="text" name="numero" list="appartamenti" required/>
+                <input class="text" type="text" name="numero" list="appartamenti"/>
             <datalist id="appartamenti">
                 <option value="1"></option>
                 <option value="2"></option>
@@ -140,38 +140,36 @@
             list_container = time + month + day
             counter_container = 'c' + list_container
             tmp = JSON.parse(localStorage.getItem(list_container))
-            if (tmp){
-                if(tmp[index] != 0){
-                    alert('Posto già assegnato: ' + tmp[index])
-                    window.location.href = "index.html"
-                } else {
-                    qty = parseInt(localStorage.getItem(counter_container))                    
-                    if (qty >= 20 && qty < 40){
-                        do {
-                            rand = Math.floor(Math.random()*20) + 21;
-                        } while (tmp.includes(rand))
-                        tmp[index] = rand
-                    } else if (qty < 20) {
-                        do {
-                            rand = Math.floor(Math.random()*20) + 1;
-                        } while (tmp.includes(rand))
-                        tmp[index] = rand
-                    } else {
-                        alert("Posti esauriti!")
-                        window.location.href = "index.html"
-                    }
-                    localStorage.setItem(list_container,JSON.stringify(tmp))
-                    alert('Posto assegnato: ' + rand);
-                    tmp2 = parseInt(localStorage.getItem(counter_container)) + 1
-                    localStorage.setItem(counter_container, tmp2)
-                    window.location.href = "index.html"
-                } 
-            } else {
+            if (!tmp){
                 tmp = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
                        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
                 localStorage.setItem(list_container,JSON.stringify(tmp))
                 localStorage.setItem(counter_container,0)
-                alert("Generazione programma di giornata appena creato. Per favore riassegnare")
+            }
+            if(tmp[index] != 0){
+                alert('Posto già assegnato: ' + tmp[index])
+                window.location.href = "index.html"
+            } else {
+                qty = parseInt(localStorage.getItem(counter_container))                    
+                if (qty >= 20 && qty < 40){
+                    do {
+                        rand = Math.floor(Math.random()*20) + 21;
+                    } while (tmp.includes(rand))
+                    tmp[index] = rand
+                } else if (qty < 20) {
+                    do {
+                        rand = Math.floor(Math.random()*20) + 1;
+                    } while (tmp.includes(rand))
+                    tmp[index] = rand
+                } else {
+                    alert("Posti esauriti!")
+                    window.location.href = "index.html"
+                }
+                localStorage.setItem(list_container,JSON.stringify(tmp))
+                alert('Posto assegnato: ' + rand)
+                tmp2 = parseInt(localStorage.getItem(counter_container)) + 1
+                localStorage.setItem(counter_container, tmp2)
+                window.location.href = "index.html"
             }
         }
         document.addEventListener('DOMContentLoaded', function(){

@@ -35,47 +35,52 @@
         <span></span>
     </section>
 
+    <div class="calendar__title">
+        <h1 id="data"></h1>
+        <h3 id="orario" class="status__subtitle"></h3>
+    </div>
+
     <div class="grid-container">
-        <a href=""><div class="grid-item" id="status1">1</div></a>
-        <a href=""><div class="grid-item" id="status2">2</div></a>
-        <a href=""><div class="grid-item" id="status3">3</div></a>  
-        <a href=""><div class="grid-item" id="status4">4</div></a>
-        <a href=""><div class="grid-item" id="status5">5</div></a>
-        <a href=""><div class="grid-item" id="status6">6</div></a>  
-        <a href=""><div class="grid-item" id="status7">7</div></a>
-        <a href=""><div class="grid-item" id="status8">8</div></a>
-        <a href=""><div class="grid-item" id="status9">9</div></a>  
-        <a href=""><div class="grid-item" id="status10">10</div></a>
-        <a href=""><div class="grid-item" id="status11">11</div></a>
-        <a href=""><div class="grid-item" id="status12">12</div></a>
-        <a href=""><div class="grid-item" id="status13">13</div></a>  
-        <a href=""><div class="grid-item" id="status14">14</div></a>
-        <a href=""><div class="grid-item" id="status15">15</div></a>
-        <a href=""><div class="grid-item" id="status16">16</div></a>  
-        <a href=""><div class="grid-item" id="status17">17</div></a>
-        <a href=""><div class="grid-item" id="status18">18</div></a>
-        <a href=""><div class="grid-item" id="status19">19</div></a>  
-        <a href=""><div class="grid-item" id="status20">20</div></a>  
-        <a href=""><div class="grid-item" id="status21">21</div></a>
-        <a href=""><div class="grid-item" id="status22">22</div></a>
-        <a href=""><div class="grid-item" id="status23">23</div></a>  
-        <a href=""><div class="grid-item" id="status24">24</div></a>
-        <a href=""><div class="grid-item" id="status25">25</div></a>
-        <a href=""><div class="grid-item" id="status26">26</div></a>  
-        <a href=""><div class="grid-item" id="status27">27</div></a>
-        <a href=""><div class="grid-item" id="status28">28</div></a>
-        <a href=""><div class="grid-item" id="status29">29</div></a>  
-        <a href=""><div class="grid-item" id="status30">30</div></a>  
-        <a href=""><div class="grid-item" id="status31">31</div></a>
-        <a href=""><div class="grid-item" id="status32">32</div></a>
-        <a href=""><div class="grid-item" id="status33">33</div></a>  
-        <a href=""><div class="grid-item" id="status34">34</div></a>
-        <a href=""><div class="grid-item" id="status35">35</div></a>
-        <a href=""><div class="grid-item" id="status36">36</div></a>  
-        <a href=""><div class="grid-item" id="status37">37</div></a>
-        <a href=""><div class="grid-item" id="status38">38</div></a>
-        <a href=""><div class="grid-item" id="status39">39</div></a>  
-        <a href=""><div class="grid-item" id="status40">40</div></a>
+        <a href=""><div class="grid-item" id="status1" onclick="localStorage.setItem('status',1);elimina()">1<p class="status__appartamento" id="para1"></p></div></a>
+        <a href=""><div class="grid-item" id="status2" onclick="localStorage.setItem('status',2);elimina()">2<p class="status__appartamento" id="para2"></p></div></a>
+        <a href=""><div class="grid-item" id="status3" onclick="localStorage.setItem('status',3);elimina()">3<p class="status__appartamento" id="para3"></p></div></a>  
+        <a href=""><div class="grid-item" id="status4" onclick="localStorage.setItem('status',4);elimina()">4<p class="status__appartamento" id="para4"></p></div></a>
+        <a href=""><div class="grid-item" id="status5" onclick="localStorage.setItem('status',5);elimina()">5<p class="status__appartamento" id="para5"></p></div></a>
+        <a href=""><div class="grid-item" id="status6" onclick="localStorage.setItem('status',6);elimina()">6<p class="status__appartamento" id="para6"></p></div></a>  
+        <a href=""><div class="grid-item" id="status7" onclick="localStorage.setItem('status',7);elimina()">7<p class="status__appartamento" id="para7"></p></div></a>
+        <a href=""><div class="grid-item" id="status8" onclick="localStorage.setItem('status',8);elimina()">8<p class="status__appartamento" id="para8"></p></div></a>
+        <a href=""><div class="grid-item" id="status9" onclick="localStorage.setItem('status',9);elimina()">9<p class="status__appartamento" id="para9"></p></div></a>  
+        <a href=""><div class="grid-item" id="status10" onclick="localStorage.setItem('status',10);elimina()">10<p class="status__appartamento" id="para10"></p></div></a>
+        <a href=""><div class="grid-item" id="status11" onclick="localStorage.setItem('status',11);elimina()">11<p class="status__appartamento" id="para11"></p></div></a>
+        <a href=""><div class="grid-item" id="status12" onclick="localStorage.setItem('status',12);elimina()">12<p class="status__appartamento" id="para12"></p></div></a>
+        <a href=""><div class="grid-item" id="status13" onclick="localStorage.setItem('status',13);elimina()">13<p class="status__appartamento" id="para13"></p></div></a>  
+        <a href=""><div class="grid-item" id="status14" onclick="localStorage.setItem('status',14);elimina()">14<p class="status__appartamento" id="para14"></p></div></a>
+        <a href=""><div class="grid-item" id="status15" onclick="localStorage.setItem('status',15);elimina()">15<p class="status__appartamento" id="para15"></p></div></a>
+        <a href=""><div class="grid-item" id="status16" onclick="localStorage.setItem('status',16);elimina()">16<p class="status__appartamento" id="para16"></p></div></a>  
+        <a href=""><div class="grid-item" id="status17" onclick="localStorage.setItem('status',17);elimina()">17<p class="status__appartamento" id="para17"></p></div></a>
+        <a href=""><div class="grid-item" id="status18" onclick="localStorage.setItem('status',18);elimina()">18<p class="status__appartamento" id="para18"></p></div></a>
+        <a href=""><div class="grid-item" id="status19" onclick="localStorage.setItem('status',19);elimina()">19<p class="status__appartamento" id="para19"></p></div></a>  
+        <a href=""><div class="grid-item" id="status20" onclick="localStorage.setItem('status',20);elimina()">20<p class="status__appartamento" id="para20"></p></div></a>  
+        <a href=""><div class="grid-item" id="status21" onclick="localStorage.setItem('status',21);elimina()">21<p class="status__appartamento" id="para21"></p></div></a>
+        <a href=""><div class="grid-item" id="status22" onclick="localStorage.setItem('status',22);elimina()">22<p class="status__appartamento" id="para22"></p></div></a>
+        <a href=""><div class="grid-item" id="status23" onclick="localStorage.setItem('status',23);elimina()">23<p class="status__appartamento" id="para23"></p></div></a>  
+        <a href=""><div class="grid-item" id="status24" onclick="localStorage.setItem('status',24);elimina()">24<p class="status__appartamento" id="para24"></p></div></a>
+        <a href=""><div class="grid-item" id="status25" onclick="localStorage.setItem('status',25);elimina()">25<p class="status__appartamento" id="para25"></p></div></a>
+        <a href=""><div class="grid-item" id="status26" onclick="localStorage.setItem('status',26);elimina()">26<p class="status__appartamento" id="para26"></p></div></a>  
+        <a href=""><div class="grid-item" id="status27" onclick="localStorage.setItem('status',27);elimina()">27<p class="status__appartamento" id="para27"></p></div></a>
+        <a href=""><div class="grid-item" id="status28" onclick="localStorage.setItem('status',28);elimina()">28<p class="status__appartamento" id="para28"></p></div></a>
+        <a href=""><div class="grid-item" id="status29" onclick="localStorage.setItem('status',29);elimina()">29<p class="status__appartamento" id="para29"></p></div></a>  
+        <a href=""><div class="grid-item" id="status30" onclick="localStorage.setItem('status',30);elimina()">30<p class="status__appartamento" id="para30"></p></div></a>  
+        <a href=""><div class="grid-item" id="status31" onclick="localStorage.setItem('status',31);elimina()">31<p class="status__appartamento" id="para31"></p></div></a>
+        <a href=""><div class="grid-item" id="status32" onclick="localStorage.setItem('status',32);elimina()">32<p class="status__appartamento" id="para32"></p></div></a>
+        <a href=""><div class="grid-item" id="status33" onclick="localStorage.setItem('status',33);elimina()">33<p class="status__appartamento" id="para33"></p></div></a>  
+        <a href=""><div class="grid-item" id="status34" onclick="localStorage.setItem('status',34);elimina()">34<p class="status__appartamento" id="para34"></p></div></a>
+        <a href=""><div class="grid-item" id="status35" onclick="localStorage.setItem('status',35);elimina()">35<p class="status__appartamento" id="para35"></p></div></a>
+        <a href=""><div class="grid-item" id="status36" onclick="localStorage.setItem('status',36);elimina()">36<p class="status__appartamento" id="para36"></p></div></a>  
+        <a href=""><div class="grid-item" id="status37" onclick="localStorage.setItem('status',37);elimina()">37<p class="status__appartamento" id="para37"></p></div></a>
+        <a href=""><div class="grid-item" id="status38" onclick="localStorage.setItem('status',38);elimina()">38<p class="status__appartamento" id="para38"></p></div></a>
+        <a href=""><div class="grid-item" id="status39" onclick="localStorage.setItem('status',39);elimina()">39<p class="status__appartamento" id="para39"></p></div></a>  
+        <a href=""><div class="grid-item" id="status40" onclick="localStorage.setItem('status',40);elimina()">40<p class="status__appartamento" id="para40"></p></div></a>
       </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -93,8 +98,28 @@
 
     <script>
         day = JSON.parse(localStorage.getItem('giorno')).toString()
-        month = JSON.parse(localStorage.getItem('mese')).toString()
-        time = JSON.parse(localStorage.getItem('orario')).toString()
+        switch (month = JSON.parse(localStorage.getItem('mese')).toString()){
+            case '6':
+                mese = 'GIUGNO'
+                break
+            case '7':
+                mese = 'LUGLIO'
+                break
+            case '8':
+                mese = 'AGOSTO'
+                break
+            case '9':
+                mese = 'SETTEMBRE'
+                break
+        }
+        switch (time = JSON.parse(localStorage.getItem('orario')).toString()){
+            case '0':
+                ora = '(MATTINO)'
+                break
+            case '1':
+                ora = '( POMERIGGIO )'
+                break
+        }
         list_container = time + month + day
         tmp = JSON.parse(localStorage.getItem(list_container))
         if(tmp){
@@ -105,9 +130,50 @@
                 status = 'status' + number
                 if (tmp[i] != 0){
                     document.getElementById(status).style.backgroundColor = 'red'
+                    id_para = 'para' + number
+                    appartamento = (i+1).toString()
+                    document.getElementById(id_para).innerHTML = '(' + appartamento + ')'
                 }
             }
         }
+        document.getElementById('data').innerHTML = day + ' ' + mese
+        document.getElementById('orario').innerHTML = ora
+    </script>
+
+    <script>
+        function elimina(){
+            number = parseInt(JSON.parse(localStorage.getItem('status')))
+            day = JSON.parse(localStorage.getItem('giorno')).toString()
+            month = JSON.parse(localStorage.getItem('mese')).toString()
+            time = JSON.parse(localStorage.getItem('orario')).toString()
+            list_container = time + month + day
+            counter_container = 'c' + list_container
+            tmp = JSON.parse(localStorage.getItem(list_container))
+            if (tmp){
+                i = 0
+                changed = false
+                while (!changed){
+                    if (tmp[i] == number){
+                        index = i
+                        changed = true
+                    }
+                    i++
+                }
+                if (tmp[index] != 0){
+                    appartamento = (index + 1).toString()
+                    answer = window.confirm("Prenotazione assegnata all'appartamento " + appartamento + ".\nEliminare la prenotazione?")
+                    if (answer){
+                        tmp[index] = 0
+                        // cambio il valore dell'assegnazione all'appartamento 'index+1' in 0
+                        localStorage.setItem(list_container,JSON.stringify(tmp))
+                        // decremento il valore del contatore
+                        tmp2 = parseInt(JSON.parse(localStorage.getItem(counter_container))) - 1
+                        localStorage.setItem(counter_container,JSON.stringify(tmp2))
+                    }
+                }
+            }
+        }
+        
     </script>
 
     </body>
