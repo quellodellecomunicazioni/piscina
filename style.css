@@ -32,7 +32,7 @@ header
 Cover
 -----------------------------*/
 .cover{height:70%;
-	background-image: url("https://source.unsplash.com/1Z_BVuDS1h4");
+	background-image: url("media/beach.jpg");
 	background-size: cover;
 	-o-background-size: cover;
 	-moz-background-size: cover;
@@ -101,6 +101,7 @@ Form
 .mattina__pomeriggio{text-align: center;height: 200px;padding: 5%;}
 .mattina__pomeriggio a{margin: 20px;font-size: 28px;}
 .mattina__pomeriggio__copy{padding: 20%;}
+.fieldset{margin-bottom: 25px;}
 
 
 /*-----------------------------

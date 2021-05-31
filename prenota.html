@@ -34,12 +34,12 @@
     </section>
     <div class="wrapper">
         <form class="form">
-            <fieldset>
+            <fieldset class="fieldset">
                 <legend>RIEPILOGO</legend>
-                <p>Martedì 01/06/2021</p>
-                <p>9:00-13:30</p>
+                <p id="data"></p></p>
+                <p id="ora"></p>
             </fieldset>
-            <fieldset class="fieldset_appartamento">
+            <fieldset>
                 <legend>APPARTAMENTO</legend>
                 <input class="text" type="text" name="numero" list="appartamenti" required/>
             <datalist id="appartamenti">
@@ -127,15 +127,16 @@
             e.preventDefault();
             var formData = new FormData(form[0]);
             index = parseInt(formData.get('numero')) - 1
-            day = JSON.parse(localStorage.getItem('giorno'))
-            month = JSON.parse(localStorage.getItem('mese'))
-            time = JSON.parse(localStorage.getItem('orario'))
+            day = JSON.parse(localStorage.getItem('giorno')).toString()
+            month = JSON.parse(localStorage.getItem('mese')).toString()
+            time = JSON.parse(localStorage.getItem('orario')).toString()
             list_container = time + month + day
             counter_container = 'c' + list_container
             tmp = JSON.parse(localStorage.getItem(list_container))
             if (tmp){
                 if(tmp[index] != 0){
-                    alert(tmp[index])
+                    alert('Posto già assegnato: ' + tmp[index])
+                    window.location.href = "index.html"
                 } else {
                     qty = parseInt(localStorage.getItem(counter_container))                    
                     if (qty >= 20 && qty < 40){
@@ -150,11 +151,13 @@
                         tmp[index] = rand
                     } else {
                         alert("Posti esauriti!")
+                        window.location.href = "index.html"
                     }
                     localStorage.setItem(list_container,JSON.stringify(tmp))
-                    alert(rand);
+                    alert('Posto assegnato: ' + rand);
                     tmp2 = parseInt(localStorage.getItem(counter_container)) + 1
                     localStorage.setItem(counter_container, tmp2)
+                    window.location.href = "index.html"
                 } 
             } else {
                 tmp = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -167,6 +170,30 @@
         document.addEventListener('DOMContentLoaded', function(){
             submitInput.addEventListener('click',getDataForm,false);
         }, false);
+    </script>
+    <script>
+        day = JSON.parse(localStorage.getItem('giorno')).toString()
+        switch (month = JSON.parse(localStorage.getItem('mese')).toString()){
+            case '6':
+                mese = 'giugno'
+                break
+            case '7':
+                mese = 'luglio'
+                break
+            case '8':
+                mese = 'agosto'
+                break
+            case '9':
+                mese = 'settembre'
+                break
+        }
+        document.getElementById('data').innerHTML = day + ' ' + mese + ' 2021'
+        time = JSON.parse(localStorage.getItem('orario')).toString()
+        if (time == '0'){
+            document.getElementById('ora').innerHTML = '9:00-13:30'
+        } else if (time == '1'){
+            document.getElementById('ora').innerHTML = '13:30-19:00'
+        }
     </script>
     </body>
 </html>
