@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+        <link rel="stylesheet" href="style.css">
+    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    </head>
+    <body>
+    
+    <header class="header clearfix">
+        <a href="index.html" class="header__logo">PISCINA</a>
+        <a href="" class="header__icon-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul class="header__menu animate">
+            <li class="header__menu__item"><a href="index.html">HOME</a></li>
+            <li class="header__menu__item"><a href="giugno.html" onclick="localStorage.setItem('mese',6)">GIUGNO</a></li>
+            <li class="header__menu__item"><a href="luglio.html" onclick="localStorage.setItem('mese',7)">LUGLIO</a></li>
+            <li class="header__menu__item"><a href="agosto.html" onclick="localStorage.setItem('mese',8)">AGOSTO</a></li>
+            <li class="header__menu__item"><a href="settembre.html" onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
+        </ul>
+    </header>
+
+    <section class="white__space__calendar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+
+    <div class="grid-container">
+        <a href=""><div class="grid-item" id="status1">1</div></a>
+        <a href=""><div class="grid-item" id="status2">2</div></a>
+        <a href=""><div class="grid-item" id="status3">3</div></a>  
+        <a href=""><div class="grid-item" id="status4">4</div></a>
+        <a href=""><div class="grid-item" id="status5">5</div></a>
+        <a href=""><div class="grid-item" id="status6">6</div></a>  
+        <a href=""><div class="grid-item" id="status7">7</div></a>
+        <a href=""><div class="grid-item" id="status8">8</div></a>
+        <a href=""><div class="grid-item" id="status9">9</div></a>  
+        <a href=""><div class="grid-item" id="status10">10</div></a>
+        <a href=""><div class="grid-item" id="status11">11</div></a>
+        <a href=""><div class="grid-item" id="status12">12</div></a>
+        <a href=""><div class="grid-item" id="status13">13</div></a>  
+        <a href=""><div class="grid-item" id="status14">14</div></a>
+        <a href=""><div class="grid-item" id="status15">15</div></a>
+        <a href=""><div class="grid-item" id="status16">16</div></a>  
+        <a href=""><div class="grid-item" id="status17">17</div></a>
+        <a href=""><div class="grid-item" id="status18">18</div></a>
+        <a href=""><div class="grid-item" id="status19">19</div></a>  
+        <a href=""><div class="grid-item" id="status20">20</div></a>  
+        <a href=""><div class="grid-item" id="status21">21</div></a>
+        <a href=""><div class="grid-item" id="status22">22</div></a>
+        <a href=""><div class="grid-item" id="status23">23</div></a>  
+        <a href=""><div class="grid-item" id="status24">24</div></a>
+        <a href=""><div class="grid-item" id="status25">25</div></a>
+        <a href=""><div class="grid-item" id="status26">26</div></a>  
+        <a href=""><div class="grid-item" id="status27">27</div></a>
+        <a href=""><div class="grid-item" id="status28">28</div></a>
+        <a href=""><div class="grid-item" id="status29">29</div></a>  
+        <a href=""><div class="grid-item" id="status30">30</div></a>  
+        <a href=""><div class="grid-item" id="status31">31</div></a>
+        <a href=""><div class="grid-item" id="status32">32</div></a>
+        <a href=""><div class="grid-item" id="status33">33</div></a>  
+        <a href=""><div class="grid-item" id="status34">34</div></a>
+        <a href=""><div class="grid-item" id="status35">35</div></a>
+        <a href=""><div class="grid-item" id="status36">36</div></a>  
+        <a href=""><div class="grid-item" id="status37">37</div></a>
+        <a href=""><div class="grid-item" id="status38">38</div></a>
+        <a href=""><div class="grid-item" id="status39">39</div></a>  
+        <a href=""><div class="grid-item" id="status40">40</div></a>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+
+                $(".header__icon-bar").click(function(e){
+
+                    $(".header__menu").toggleClass('is-open');
+                    e.preventDefault();
+
+                });
+            });
+    </script>
+
+    <script>
+        day = JSON.parse(localStorage.getItem('giorno')).toString()
+        month = JSON.parse(localStorage.getItem('mese')).toString()
+        time = JSON.parse(localStorage.getItem('orario')).toString()
+        list_container = time + month + day
+        tmp = JSON.parse(localStorage.getItem(list_container))
+        if(tmp){
+            base = 'status'
+            for (var i = 0; i<60; i++){
+                number = tmp[i]
+                console.log(number)
+                status = 'status' + number
+                if (tmp[i] != 0){
+                    document.getElementById(status).style.backgroundColor = 'red'
+                }
+            }
+        }
+    </script>
+
+    </body>
+</html>
