@@ -12,7 +12,7 @@
     <body>
 
     <header class="header clearfix">
-        <a href="index.html" class="header__logo">PISCINA</a>
+        <a href="index.html" class="header__logo">Piscina Eden</a>
         <a href="" class="header__icon-bar">
             <span></span>
             <span></span>
@@ -39,7 +39,7 @@
                 <p id="data"></p></p>
                 <p id="ora"></p>
             </fieldset>
-            <fieldset>
+            <fieldset class="fieldset_appartamento">
                 <legend>APPARTAMENTO</legend>
                 <input class="text" type="text" name="numero" list="appartamenti"/>
             <datalist id="appartamenti">
@@ -151,14 +151,14 @@
                 window.location.href = "index.html"
             } else {
                 qty = parseInt(localStorage.getItem(counter_container))                    
-                if (qty >= 20 && qty < 40){
+                if (qty >= 11 && qty < 31){
                     do {
-                        rand = Math.floor(Math.random()*20) + 21;
+                        rand = Math.floor(Math.random()*20) + 12;
                     } while (tmp.includes(rand))
                     tmp[index] = rand
-                } else if (qty < 20) {
+                } else if (qty < 11) {
                     do {
-                        rand = Math.floor(Math.random()*20) + 1;
+                        rand = Math.floor(Math.random()*11) + 1;
                     } while (tmp.includes(rand))
                     tmp[index] = rand
                 } else {
@@ -207,10 +207,10 @@
         counter_container = 'c' + time + month + day
         tmp = JSON.parse(localStorage.getItem(counter_container))
         if(tmp){
-            remaining = (40 - parseInt(tmp))
-            document.getElementById('rimasti').innerHTML = remaining.toString() + ' su 40 disponibili'
+            remaining = (31 - parseInt(tmp))
+            document.getElementById('rimasti').innerHTML = remaining.toString() + ' su 31 disponibili'
         } else {
-            document.getElementById('rimasti').innerHTML = '40 su 40 disponibili'
+            document.getElementById('rimasti').innerHTML = '31 su 31 disponibili'
         }
     </script>
     </body>

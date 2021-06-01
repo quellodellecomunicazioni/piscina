@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 html,body{height:100%;}
 body{background: #daddd8;}
 
@@ -20,7 +21,7 @@ header
 -----------------------------*/
 
 .header{background: #4b5842}
-.header__logo{color:#ffffff; float:right;display: block;padding:20px;text-decoration: none;}
+.header__logo{color:#ffffff; float:right;display: block;padding:20px;text-decoration: none;font-family: 'Satisfy', cursive;font-size: 24px;}
 .header__menu{float:right;margin:0; padding:0;}
 .header__menu__item{display: inline-block;}
 .header__menu__item a{color:#fff;display: block;padding:20px;text-decoration: none}
@@ -47,10 +48,11 @@ Cover
 .cover--single{height: 50%}
 .cover--single h1{font-size: 42px;}
 
-.banner{background: #c7d59f; height:15%;margin-top:20px;position: relative;text-align: center;}
-.banner__copy__text{position: absolute;top: 0;left: 0;right: 0;margin-top: -15px;}
+.banner{background: #c7d59f; height:15%;margin-top:10px;position: relative;text-align: center;}
+.banner__copy__text{position: absolute;top: 0;left: 0;right: 0;margin-top: -20px;}
 
 .banner__copy__text h3{font-size: 36px;vertical-align: middle;}
+.banner__copy__text a{color: #fff;}
 
 
 /*-----------------------------
@@ -63,6 +65,7 @@ Form
 .mattina__pomeriggio a{margin: 20px;font-size: 28px;}
 .mattina__pomeriggio__copy{padding: 20%;}
 .fieldset{margin-bottom: 25px;}
+.fieldset_appartamento{border: 0px;}
 .status__appartamento{font-size: 13px;margin: 0px;position: absolute;}
 
 
@@ -77,8 +80,7 @@ Calendar
 	padding: 10px;
   }
   .grid-item {
-	background-color: #b7ce63;
-	border: 1px solid #4b5842;
+	background-color: #c7d59f;
 	padding: 20px;
 	font-size: 30px;
 	text-align: center;
