@@ -150,9 +150,11 @@
             counter_container = 'c' + list_container
             tmp = JSON.parse(localStorage.getItem(list_container))
             if (tmp){
+                // se il giorno è stato inizializzato
                 i = 0
                 changed = false
-                while (!changed){
+                // cerco l'appartamento (indice+1) della postazione 
+                while (!changed && i<60){
                     if (tmp[i] == number){
                         index = i
                         changed = true
