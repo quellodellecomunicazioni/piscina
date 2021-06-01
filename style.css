@@ -28,6 +28,7 @@ header
 .header__menu__item a:hover{background: #000}
 .header__icon-bar{display: block;float: left;padding:20px;display: none;}
 .header__icon-bar span{display: block;height:3px; width: 30px;background: #fff; margin-bottom: 5px;}
+.hr{background-color: #c7d59f;width: 75%;margin: 0 auto;}
 
 
 /*-----------------------------
@@ -48,6 +49,7 @@ Cover
 
 .banner{background: #c7d59f; height:15%;margin-top:10px;position: relative;text-align: center;}
 .banner1{background: #8fb339; height:15%;margin-top:10px;position: relative;text-align: center;}
+.banner3{background: #4b5842; height:15%;margin-top:10px;position: relative;text-align: center;}
 .banner__copy__text{position: absolute;top: 0;left: 0;right: 0;margin-top: -20px;}
 
 .banner__copy__text h3{font-size: 36px;vertical-align: middle;font-family: 'Caveat Brush', cursive;}
