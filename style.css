@@ -65,7 +65,7 @@ Form
 .mattina__pomeriggio{text-align: center;height: 200px;padding: 5%;}
 .mattina__pomeriggio a{margin: 20px;font-size: 28px;}
 .mattina__pomeriggio__copy{padding: 20%;}
-.fieldset{margin-bottom: 5px;background-color: #8fb339;border-radius: 5px;}
+.fieldset{margin-bottom: 5px;background-color: #8fb339;border-radius: 5px;border: none;}
 .fieldset_appartamento{border: 0px;}
 .status__appartamento{font-size: 13px;margin: 0px;position: absolute;}
 .form{padding-left: 15px;padding-right: 15px;}
