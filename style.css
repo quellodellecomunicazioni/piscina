@@ -1,5 +1,5 @@
 html,body{height:100%;}
-body{background: #f0ead2;}
+body{background: #daddd8;}
 
 /*-----------------------------
 general
@@ -13,13 +13,13 @@ general
 .button{display: inline-block; background: #fff; color:#000;padding: 15px 30px; border-radius:3px; text-decoration: none;}
 p{line-height: 22px}
 a{text-decoration: none;}
-a:visited{color: #adc178;}
-a:hover{color: #6c584c;}
+a:visited{color: #8fb339;}
+a:hover{color: #4b5842;}
 /*-----------------------------
 header
 -----------------------------*/
 
-.header{background: #6c584c}
+.header{background: #4b5842}
 .header__logo{color:#ffffff; float:right;display: block;padding:20px;text-decoration: none;}
 .header__menu{float:right;margin:0; padding:0;}
 .header__menu__item{display: inline-block;}
@@ -47,7 +47,7 @@ Cover
 .cover--single{height: 50%}
 .cover--single h1{font-size: 42px;}
 
-.banner{background: #dde5b6; height:15%;margin-top:20px;position: relative;text-align: center;}
+.banner{background: #c7d59f; height:15%;margin-top:20px;position: relative;text-align: center;}
 .banner__copy__text{position: absolute;top: 0;left: 0;right: 0;margin-top: -15px;}
 
 .banner__copy__text h3{font-size: 36px;vertical-align: middle;}
@@ -77,8 +77,8 @@ Calendar
 	padding: 10px;
   }
   .grid-item {
-	background-color: #adc178;
-	border: 1px solid #3f4238;
+	background-color: #b7ce63;
+	border: 1px solid #4b5842;
 	padding: 20px;
 	font-size: 30px;
 	text-align: center;
