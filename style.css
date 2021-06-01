@@ -46,51 +46,6 @@ Cover
 .cover--single{height: 50%}
 .cover--single h1{font-size: 42px;}
 
-/*-----------------------------
-Cards
------------------------------*/
-
-.cards{max-width: 1200px; margin: 40px auto}
-.card{width: 30%; margin:0 1.5%; background: #fff;float:left;}
-.card__image{width:100%; height: auto;}
-.card__copy{padding:5px 20px;}
-.card__copy h3{margin-bottom:0}
-
-
-
-/*-----------------------------
-Banner
------------------------------*/
-.banner{background: #fff; height:50%;margin-top:40px}
-.banner__image{width:30%; float:left;height:100%;
-	background-image: url("https://source.unsplash.com/category/nature/400x400");
-	background-size: cover;
-	-o-background-size: cover;
-	-moz-background-size: cover;
-	background-position: center center;
-}
-.banner__copy{width:70%; float:left;height:100%;display: table;}
-.banner__copy__text{display: table-cell; vertical-align: middle;padding:30px;}
-
-.banner__copy__text h3{font-size: 36px;margin-bottom:0;}
-.banner__copy__text h4{font-size: 22px;margin: 5px 0}
-
-
-/*-----------------------------
-Footer
------------------------------*/
-
-.footer{background: #333; padding:30px;color:#fff; margin-top: 40px}
-
-
-/*-----------------------------
-Single
------------------------------*/
-
-.panel__copy{max-width: 800px; margin: 0px auto; margin-top: -60px; background: #fff; padding:20px 40px;position: relative; z-index: 1}
-.panel__copy__meta{font-weight: bold;font-size: 16px;	}
-.panel__copy__title{font-size: 32px;}
-
 
 /*-----------------------------
 Form
@@ -126,16 +81,6 @@ Calendar
 
 
 /*-----------------------------
-Tablet
------------------------------*/
-@media (max-width: 998px){
-	/* banner */
-	.banner__image,
-	.banner__copy{width:50%;height:100%}
-}
-
-
-/*-----------------------------
 Smartphone
 -----------------------------*/
 @media (max-width: 767px){
@@ -149,14 +94,6 @@ Smartphone
 
 	/* Cover */
 	.cover{height:100%;}
-
-	/* Cards */
-	.card{width: 90%; margin:5%; }
-
-	/* Banner */
-	.banner{height: 600px;}
-	.banner__image,
-	.banner__copy{width:100%;height:50%}
 
 	/* Form */
 	.white__space{height: 80px;}

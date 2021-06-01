@@ -1,0 +1,15 @@
+{
+    "background_color": "white",
+    "description": "Assegnazione casuale ombrelloni",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "media/pool.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      }
+    ],
+    "name": "Assegnazione ombrelloni",
+    "short_name": "Piscina",
+    "start_url": "index.html"
+  }
