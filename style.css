@@ -68,14 +68,14 @@ Form
 .mattina__pomeriggio__copy{padding: 20%;}
 .fieldset{margin-bottom: 5px;background-color: #8fb339;border-radius: 5px;border: none;}
 .fieldset_appartamento{border: 0px;}
-.status__appartamento{font-size: 14px;margin: 0px;position: absolute;padding: 0 12px;}
+.status__appartamento{font-size: 15px;position: absolute;display: inline-block;}
 .form{padding-left: 15px;padding-right: 15px;}
 .legend{background-color: none;font-family: 'Caveat Brush', cursive;color: #4b5842;font-size: 40px;}
 .legend_appartamento{font-family: 'Caveat Brush', cursive;color: #4b5842;font-size: 40px;}
 .riepilogo{color: #daddd8;font-family: 'Rock Salt', cursive;}
 .submit{background-color: #4b5842;color: #fff;padding: 15px 30px;font-family: 'Caveat Brush', cursive;border-radius: 5px;border: none;font-size: 20px;}
 .text{height: 50px;width: 50%;font-size: 30px;font-family: 'Caveat Brush', cursive;}
-
+.line{max-width: 75vw;display: block;margin: 10px auto;}
 
 /*-----------------------------
 Calendar
@@ -103,8 +103,9 @@ Calendar
 	text-align: center;
 	color: #fff;
 	font-family: 'Caveat Brush', cursive;
-	border-bottom: solid 2px #8fb339;
+	border-bottom: solid 2px #4b5842;
 	margin-top: -2px;
+	position: relative;
 }
 .grid-item_nobottomborder {
 	background-color: #c7d59f;
@@ -113,7 +114,8 @@ Calendar
 	text-align: center;
 	color: #fff;
 	font-family: 'Caveat Brush', cursive;
-	border-bottom: solid 2px #8fb339;
+	border-bottom: solid 2px #4b5842;
+	position: relative;
 }
 .grid-item_bottomrightborder {
 	background-color: #c7d59f;
@@ -122,9 +124,10 @@ Calendar
 	text-align: center;
 	color: #fff;
 	font-family: 'Caveat Brush', cursive;
-	border-bottom: solid 2px #8fb339;
-	border-right: solid 2px #8fb339;
+	border-bottom: solid 2px #4b5842;
+	border-right: solid 2px #4b5842;
 	margin-top: -2px;
+	position: relative;
 }
 
 
