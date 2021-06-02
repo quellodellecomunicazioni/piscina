@@ -52,7 +52,7 @@
         <a href=""><div class="grid-item" id="status5" onclick="localStorage.setItem('status',5);elimina()">5<p class="status__appartamento" id="para5"></p></div></a>
         <a href=""><div class="grid-item" id="status6" onclick="localStorage.setItem('status',6);elimina()">6<p class="status__appartamento" id="para6"></p></div></a>  
         <a href=""><div class="grid-item" id="status7" onclick="localStorage.setItem('status',7);elimina()">7<p class="status__appartamento" id="para7"></p></div></a>
-        <a href=""><div class="grid-item_bottomborder" id="status8" onclick="localStorage.setItem('status',8);elimina()">8<p class="status__appartamento" id="para8"></p></div></a>
+        <a href=""><div class="grid-item_nobottomborder" id="status8" onclick="localStorage.setItem('status',8);elimina()">8<p class="status__appartamento" id="para8"></p></div></a>
         <a href=""><div class="grid-item_bottomborder" id="status9" onclick="localStorage.setItem('status',9);elimina()">9<p class="status__appartamento" id="para9"></p></div></a>  
         <a href=""><div class="grid-item_bottomborder" id="status10" onclick="localStorage.setItem('status',10);elimina()">10<p class="status__appartamento" id="para10"></p></div></a>
         <a href=""><div class="grid-item_bottomrightborder" id="status11" onclick="localStorage.setItem('status',11);elimina()">11<p class="status__appartamento" id="para11"></p></div></a>
@@ -109,7 +109,7 @@
         }
         switch (time = JSON.parse(localStorage.getItem('orario')).toString()){
             case '0':
-                ora = '(MATTINO)'
+                ora = '( MATTINO )'
                 break
             case '1':
                 ora = '( POMERIGGIO )'
