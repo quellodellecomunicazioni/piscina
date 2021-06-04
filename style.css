@@ -98,16 +98,28 @@ a:hover{color: #4b5842;}
 
 /* BANNER */
 
-.banner1{text-align: center;background: #8fb339;}
-.banner1 h1{padding: 30px;font-family: 'Caveat Brush', cursive;}
+.banner1{text-align: center;
+		 background: #8fb339;
+}
+.banner1 h1{padding: 30px;
+			font-family: 'Caveat Brush', cursive;
+}
 .banner1 a{color: #fff;}
 
-.banner2{text-align: center;background: #c7d59f;}
-.banner2 h1{padding: 30px;font-family: 'Caveat Brush', cursive;}
+.banner2{text-align: center;
+		 background: #c7d59f;
+}
+.banner2 h1{padding: 30px;
+			font-family: 'Caveat Brush', cursive;
+}
 .banner2 a{color: #fff;}
 
-.banner3{text-align: center;background: #4b5842;}
-.banner3 h1{padding: 30px;font-family: 'Caveat Brush', cursive;}
+.banner3{text-align: center;
+		 background: #4b5842;
+}
+.banner3 h1{padding: 30px;
+			font-family: 'Caveat Brush', cursive;
+}
 .banner3 a{color: #fff;}
 
 
@@ -178,6 +190,15 @@ a:hover{color: #4b5842;}
 .calendar__title{text-align: center;
 				 color: #3f4238;
 				 font-family: 'Caveat Brush', cursive;
+				 display: flex;
+				 align-items: center;
+				 justify-content: space-between;
+				 margin: auto 10%;
+}
+.calendar__title a{color: #8fb339;}
+.status__title{text-align: center;
+	color: #3f4238;
+	font-family: 'Caveat Brush', cursive;
 }
 .grid-container {
 	display: grid;
@@ -186,45 +207,41 @@ a:hover{color: #4b5842;}
 }
 .grid-item {
 	background-color: #c7d59f;
-	padding: 20px;
+	padding: 15px;
 	font-size: 30px;
 	text-align: center;
 	color: #fff;
 	font-family: 'Caveat Brush', cursive;
-	position: relative;
 }
 .grid-item_bottomborder {
 	background-color: #c7d59f;
-	padding: 20px;
+	padding: 15px;
 	font-size: 30px;
 	text-align: center;
 	color: #fff;
 	font-family: 'Caveat Brush', cursive;
-	border-bottom: solid 2px #4b5842;
-	margin-top: -2px;
-	position: relative;
+	border-bottom: solid 4px #8fb339;
+	margin-top: -4px;
 }
 .grid-item_nobottomborder {
 	background-color: #c7d59f;
-	padding: 20px;
+	padding: 15px;
 	font-size: 30px;
 	text-align: center;
 	color: #fff;
 	font-family: 'Caveat Brush', cursive;
-	border-bottom: solid 2px #4b5842;
-	position: relative;
+	border-bottom: solid 4px #8fb339;
 }
 .grid-item_bottomrightborder {
 	background-color: #c7d59f;
-	padding: 20px;
+	padding: 15px;
 	font-size: 30px;
 	text-align: center;
 	color: #fff;
 	font-family: 'Caveat Brush', cursive;
-	border-bottom: solid 2px #4b5842;
-	border-right: solid 2px #4b5842;
-	margin-top: -2px;
-	position: relative;
+	border-bottom: solid 4px #8fb339;
+	border-right: solid 4px #8fb339;
+	margin-top: -4px;
 }
 
 
