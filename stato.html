@@ -272,8 +272,14 @@
             list_container = time + month + day
             counter_container = 'c' + list_container
             tmp = JSON.parse(localStorage.getItem(list_container))
-            if (tmp) {
-                // se il giorno è stato inizializzato
+            if (!tmp) {
+                tmp = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+                ]
+                localStorage.setItem(list_container, JSON.stringify(tmp))
+                localStorage.setItem(counter_container, 0)
+            }
+            if (tmp.includes(number)){
                 i = 0
                 changed = false
                     // cerco l'appartamento (indice+1) della postazione 
@@ -295,6 +301,12 @@
                         tmp2 = parseInt(JSON.parse(localStorage.getItem(counter_container))) - 1
                         localStorage.setItem(counter_container, JSON.stringify(tmp2))
                     }
+                
+                }
+            } else {
+                answer = window.confirm("Postazione libera.\nSi desidera assegnarla?")
+                if (answer){
+                    window.location.href = "assegna.html"
                 }
             }
         }
