@@ -119,9 +119,9 @@ a:hover {
 .cover {
     height: 70%;
     background-image: url("media/beach.jpg");
-    background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
+    background-size: cover;
     background-position: center center;
     position: relative;
 }

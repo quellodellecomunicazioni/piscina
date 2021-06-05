@@ -303,7 +303,7 @@
                     }
                 }
             } else {
-                answer = window.confirm('Postazione libera. Si desidera assegnarla?')
+                answer = window.confirm('Postazione ' + number + ' libera. Si desidera assegnarla?')
                 if (answer){
                     localStorage.setItem('redirect',JSON.stringify(1))
                 }
