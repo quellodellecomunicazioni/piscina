@@ -34,7 +34,8 @@
             <li class="header__menu__item"><a href="agosto.html" onclick="localStorage.setItem('mese',8)">AGOSTO</a>
             </li>
             <hr class="hr">
-            <li class="header__menu__item"><a href="settembre.html" onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
+            <li class="header__menu__item"><a href="settembre.html"
+                    onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
             <hr class="hr">
             <li class="header__menu__item"><a href="info.html">INFO</a></li>
         </ul>
@@ -52,10 +53,12 @@
     </section>
 
     <h1 class="status__title">INFO UTILI</h1>
-    <p class="info__text">Per qualsiasi informazione o chiarimento si prega di fare riferimento al contatto riportato di seguito</p>
+    <p class="info__text">Per qualsiasi informazione o chiarimento si prega di fare riferimento al contatto riportato di
+        seguito</p>
     <p class="info__text">Davide Cattaneo</p>
     <p class="info__text">+39 3935670750</p>
     <p class="info__text">davide.cattaneo@datavoicesys.eu</p>
+    <p><a href="download/istruzioni.pdf">scarica istruzioni</a></p>
 
     <section class="white__space">
         <span></span>
@@ -68,14 +71,15 @@
         <span></span>
     </section>
 
-    <p class="copyright">Questa applicazione è proprietà di Davide Cattaneo e ogni utilizzo senza espresso consenso è severamente vietato.</p>
+    <p class="copyright">Questa applicazione è proprietà di Davide Cattaneo e ogni utilizzo senza espresso consenso è
+        severamente vietato.</p>
     <p class="copyright"> Copyright © 2021 - Davide Cattaneo</p>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
 
-            $(".header__icon-bar").click(function(e) {
+            $(".header__icon-bar").click(function (e) {
 
                 $(".header__menu").toggleClass('is-open');
                 e.preventDefault();
