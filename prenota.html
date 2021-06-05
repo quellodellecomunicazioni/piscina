@@ -53,7 +53,7 @@
             <fieldset class="fieldset_appartamento">
                 <legend class="legend_appartamento">APPARTAMENTO</legend>
                 <select class="text" type="text" name="numero" list="appartamenti">
-                    <option value="">SELEZIONA</option>
+                    <option value="">Seleziona</option>
                     <option value="1">APPARTAMENTO 1</option>
                     <option value="2">APPARTAMENTO 2</option>
                     <option value="3">APPARTAMENTO 3</option>
@@ -162,7 +162,7 @@
             }
             if (tmp[index] != 0) {
                 alert('Posto già assegnato: ' + tmp[index])
-                window.location.href = "index.html"
+                window.location.href = "stato.html"
             } else {
                 qty = parseInt(localStorage.getItem(counter_container))
                 if (qty >= 11 && qty < 31) {
@@ -177,13 +177,13 @@
                     tmp[index] = rand
                 } else {
                     alert("Posti esauriti!")
-                    window.location.href = "index.html"
+                    window.location.href = "stato.html"
                 }
                 localStorage.setItem(list_container, JSON.stringify(tmp))
                 alert('Posto assegnato: ' + rand)
                 tmp2 = parseInt(localStorage.getItem(counter_container)) + 1
                 localStorage.setItem(counter_container, tmp2)
-                window.location.href = "index.html"
+                window.location.href = "stato.html"
             }
         }
         document.addEventListener('DOMContentLoaded', function() {

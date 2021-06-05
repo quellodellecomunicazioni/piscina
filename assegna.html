@@ -165,7 +165,7 @@
             }
             if (tmp[index] != 0) {
                 alert('Posto già assegnato: ' + tmp[index])
-                window.location.href = "index.html"
+                window.location.href = "stato.html"
             } else {
                 qty = parseInt(localStorage.getItem(counter_container))
                 if (qty < 31) {
@@ -173,13 +173,13 @@
                     tmp[index] = rand
                 } else {
                     alert("Posti esauriti!")
-                    window.location.href = "index.html"
+                    window.location.href = "stato.html"
                 }
                 localStorage.setItem(list_container, JSON.stringify(tmp))
                 alert('Posto assegnato: ' + rand)
                 tmp2 = parseInt(localStorage.getItem(counter_container)) + 1
                 localStorage.setItem(counter_container, tmp2)
-                window.location.href = "index.html"
+                window.location.href = "stato.html"
             }
         }
         document.addEventListener('DOMContentLoaded', function () {
