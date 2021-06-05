@@ -367,6 +367,20 @@ a:hover {
     margin-top: -4px;
 }
 
+.info__text{
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.copyright{
+    text-align: right;
+    padding: 0 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    line-height: 3mm;
+}
+
 
 /*-----------------------------
 Smartphone
@@ -390,7 +404,7 @@ Smartphone
         display: block;
     }
     .is-open {
-        height: 300px;
+        height: 370px;
         overflow: auto;
     }
     /* Cover */
