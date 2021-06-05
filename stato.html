@@ -282,7 +282,7 @@
             if (tmp.includes(number)){
                 i = 0
                 changed = false
-                    // cerco l'appartamento (indice+1) della postazione 
+                // cerco l'appartamento (indice+1) della postazione 
                 while (!changed && i < 60) {
                     if (tmp[i] == number) {
                         index = i
@@ -295,20 +295,26 @@
                     answer = window.confirm("Prenotazione assegnata all'appartamento " + appartamento + ".\nEliminare la prenotazione?")
                     if (answer) {
                         tmp[index] = 0
-                            // cambio il valore dell'assegnazione all'appartamento 'index+1' in 0
+                        // cambio il valore dell'assegnazione all'appartamento 'index+1' in 0
                         localStorage.setItem(list_container, JSON.stringify(tmp))
-                            // decremento il valore del contatore
+                        // decremento il valore del contatore
                         tmp2 = parseInt(JSON.parse(localStorage.getItem(counter_container))) - 1
                         localStorage.setItem(counter_container, JSON.stringify(tmp2))
                     }
-                
                 }
             } else {
-                answer = window.confirm("Postazione libera.\nSi desidera assegnarla?")
+                answer = window.confirm('Postazione libera. Si desidera assegnarla?')
                 if (answer){
-                    window.location.href = "assegna.html"
+                    localStorage.setItem('redirect',JSON.stringify(1))
                 }
             }
+        }
+    </script>
+    <script>
+        redirect = JSON.parse(localStorage.getItem('redirect')).toString()
+        if (redirect=='1'){
+            localStorage.setItem('redirect',0)
+            window.location.href = 'assegna.html'
         }
     </script>
 
