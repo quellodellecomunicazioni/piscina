@@ -374,6 +374,12 @@ a:hover {
     font-family: 'Raleway', sans-serif;
 }
 
+.info__text__contact{
+    padding: 0px 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
 .copyright{
     text-align: right;
     padding: 0 20px;
