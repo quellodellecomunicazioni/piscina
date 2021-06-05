@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Rock+Salt&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Raleway&family=Satisfy&display=swap');
 html,
 body {
     height: 100%;
@@ -26,8 +26,9 @@ general
     background: #daddd8;
     color: #000;
     padding: 15px 30px;
-    border-radius: 3px;
+    border-radius: 5px;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .button:visited {
@@ -230,7 +231,7 @@ a:hover {
 .fieldset {
     margin-bottom: 5px;
     background-color: #8fb339;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
 }
 
@@ -264,7 +265,9 @@ a:hover {
 
 .riepilogo {
     color: #daddd8;
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .submit {
@@ -281,7 +284,10 @@ a:hover {
     height: 50px;
     width: 75%;
     font-size: 18px;
-    font-family: 'Caveat Brush', cursive;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 0;
 }
 
 .line {
@@ -407,6 +413,8 @@ Smartphone
     .disponibili {
         margin-top: 0px;
         color: #8fb339;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
     }
     .status__subtitle {
         margin-top: -10px;
