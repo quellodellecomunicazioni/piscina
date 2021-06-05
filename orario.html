@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Piscina Eden</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
-        <link rel="stylesheet" href="style.css">
-    
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    </head>
-    <body>
-    
-        <header class="header clearfix">
-            <a href="index.html" class="header__logo">Piscina Eden</a>
-            <a href="" class="header__icon-bar">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <ul class="header__menu animate">
-                <li class="header__menu__item"><a href="index.html">HOME</a></li>
-                <hr class="hr">
-                <li class="header__menu__item"><a href="giugno.html" onclick="localStorage.setItem('mese',6)">GIUGNO</a></li>
-                <hr class="hr">
-                <li class="header__menu__item"><a href="luglio.html" onclick="localStorage.setItem('mese',7)">LUGLIO</a></li>
-                <hr class="hr">
-                <li class="header__menu__item"><a href="agosto.html" onclick="localStorage.setItem('mese',8)">AGOSTO</a></li>
-                <hr class="hr">
-                <li class="header__menu__item"><a href="settembre.html" onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
-            </ul>
-        </header>
-    
+<head>
+    <meta charset="UTF-8">
+    <title>Piscina Eden</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <header class="header clearfix">
+        <a href="index.html" class="header__logo">Piscina Eden</a>
+        <a href="" class="header__icon-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul class="header__menu animate">
+            <li class="header__menu__item"><a href="index.html">HOME</a></li>
+            <hr class="hr">
+            <li class="header__menu__item"><a href="giugno.html" onclick="localStorage.setItem('mese',6)">GIUGNO</a>
+            </li>
+            <hr class="hr">
+            <li class="header__menu__item"><a href="luglio.html" onclick="localStorage.setItem('mese',7)">LUGLIO</a>
+            </li>
+            <hr class="hr">
+            <li class="header__menu__item"><a href="agosto.html" onclick="localStorage.setItem('mese',8)">AGOSTO</a>
+            </li>
+            <hr class="hr">
+            <li class="header__menu__item"><a href="settembre.html" onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
+        </ul>
+    </header>
+
     <section class="white__space">
         <span></span>
         <span></span>
@@ -45,24 +49,25 @@
     </section>
 
     <section class="banner2 clearfix">
-            <h1><a href="prenota.html" onclick="localStorage.setItem('orario',0)">MATTINA</a></h1>
-	</section>
+        <h1><a href="prenota.html" onclick="localStorage.setItem('orario',0)">MATTINA</a></h1>
+    </section>
     <section class="banner1 clearfix">
-            <h1><a href="prenota.html" onclick="localStorage.setItem('orario',1)">POMERIGGIO</a></h1>
-	</section>
+        <h1><a href="prenota.html" onclick="localStorage.setItem('orario',1)">POMERIGGIO</a></h1>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
-            $(document).ready(function(){
+        $(document).ready(function() {
 
-                $(".header__icon-bar").click(function(e){
+            $(".header__icon-bar").click(function(e) {
 
-                    $(".header__menu").toggleClass('is-open');
-                    e.preventDefault();
+                $(".header__menu").toggleClass('is-open');
+                e.preventDefault();
 
-                });
             });
+        });
     </script>
 
-    </body>
+</body>
+
 </html>

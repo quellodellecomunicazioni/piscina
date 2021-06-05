@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Piscina Eden</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
-        <link rel="stylesheet" href="style.css">
-    
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    </head>
-    <body>
-    
-        <header class="header clearfix">
-            <a href="index.html" class="header__logo">Piscina Eden</a>
-            <a href="" class="header__icon-bar">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <ul class="header__menu animate">
-                <li class="header__menu__item"><a href="index.html">HOME</a></li>
-                <hr class="hr">
-                <li class="header__menu__item"><a href="giugno.html" onclick="localStorage.setItem('mese',6)">GIUGNO</a></li>
-                <hr class="hr">
-                <li class="header__menu__item"><a href="luglio.html" onclick="localStorage.setItem('mese',7)">LUGLIO</a></li>
-                <hr class="hr">
-                <li class="header__menu__item"><a href="agosto.html" onclick="localStorage.setItem('mese',8)">AGOSTO</a></li>
-                <hr class="hr">
-                <li class="header__menu__item"><a href="settembre.html" onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
-            </ul>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <title>Piscina Eden</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <header class="header clearfix">
+        <a href="index.html" class="header__logo">Piscina Eden</a>
+        <a href="" class="header__icon-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul class="header__menu animate">
+            <li class="header__menu__item"><a href="index.html">HOME</a></li>
+            <hr class="hr">
+            <li class="header__menu__item"><a href="giugno.html" onclick="localStorage.setItem('mese',6)">GIUGNO</a>
+            </li>
+            <hr class="hr">
+            <li class="header__menu__item"><a href="luglio.html" onclick="localStorage.setItem('mese',7)">LUGLIO</a>
+            </li>
+            <hr class="hr">
+            <li class="header__menu__item"><a href="agosto.html" onclick="localStorage.setItem('mese',8)">AGOSTO</a>
+            </li>
+            <hr class="hr">
+            <li class="header__menu__item"><a href="settembre.html" onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
+        </ul>
+    </header>
 
     <section class="white__space__calendar">
         <span></span>
@@ -46,51 +50,114 @@
     </div>
 
     <div class="grid-container">
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 1)">1</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 2)">2</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 3)">3</div></a>  
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 4)">4</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 5)">5</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 6)">6</div></a>  
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 7)">7</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 8)">8</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 9)">9</div></a>  
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 10)">10</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 11)">11</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 12)">12</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 13)">13</div></a>  
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 14)">14</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 15)">15</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 16)">16</div></a>  
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 17)">17</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 18)">18</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 19)">19</div></a>  
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 20)">20</div></a>  
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 21)">21</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 22)">22</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 23)">23</div></a>  
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 24)">24</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 25)">25</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 26)">26</div></a>  
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 27)">27</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 28)">28</div></a>
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 29)">29</div></a>  
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 30)">30</div></a>  
-        <a href="orario.html"><div class="grid-item" onclick="localStorage.setItem('giorno', 31)">31</div></a>  
-      </div>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 1)">1</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 2)">2</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 3)">3</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 4)">4</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 5)">5</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 6)">6</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 7)">7</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 8)">8</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 9)">9</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 10)">10</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 11)">11</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 12)">12</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 13)">13</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 14)">14</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 15)">15</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 16)">16</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 17)">17</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 18)">18</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 19)">19</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 20)">20</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 21)">21</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 22)">22</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 23)">23</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 24)">24</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 25)">25</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 26)">26</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 27)">27</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 28)">28</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 29)">29</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 30)">30</div>
+        </a>
+        <a href="orario.html">
+            <div class="grid-item" onclick="localStorage.setItem('giorno', 31)">31</div>
+        </a>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
-            $(document).ready(function(){
+        $(document).ready(function() {
 
-                $(".header__icon-bar").click(function(e){
+            $(".header__icon-bar").click(function(e) {
 
-                    $(".header__menu").toggleClass('is-open');
-                    e.preventDefault();
+                $(".header__menu").toggleClass('is-open');
+                e.preventDefault();
 
-                });
             });
+        });
     </script>
 
-    </body>
+</body>
+
 </html>
