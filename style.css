@@ -118,7 +118,7 @@ a:hover {
 
 .cover {
     height: 70%;
-    background-image: url("media/beach.jpg");
+    background-image: url("media/pool.jpg");
     -o-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -150,6 +150,12 @@ a:hover {
     text-align: center;
     color: #fff;
     font-family: 'Caveat Brush', cursive;
+}
+
+.cover__caption__copy h1{
+    font-family: 'Satisfy';
+    color: #8fb339;
+    font-size: 38px;
 }
 
 
