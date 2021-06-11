@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Rock+Salt&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Raleway&family=Satisfy&display=swap');
+
 html,
 body {
     height: 100%;
@@ -26,8 +27,9 @@ general
     background: #daddd8;
     color: #000;
     padding: 15px 30px;
-    border-radius: 3px;
+    border-radius: 5px;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .button:visited {
@@ -116,10 +118,10 @@ a:hover {
 
 .cover {
     height: 70%;
-    background-image: url("media/beach.jpg");
-    background-size: cover;
+    background-image: url("media/pool.jpg");
     -o-background-size: cover;
     -moz-background-size: cover;
+    background-size: cover;
     background-position: center center;
     position: relative;
 }
@@ -130,7 +132,7 @@ a:hover {
     height: 100%;
     position: absolute;
     z-index: 0;
-    opacity: 0.35;
+    opacity: 0.5;
 }
 
 .cover__caption {
@@ -148,6 +150,16 @@ a:hover {
     text-align: center;
     color: #fff;
     font-family: 'Caveat Brush', cursive;
+}
+
+.cover__caption__copy h1{
+    font-family: 'Satisfy';
+    color: #8fb339;
+    font-size: 38px;
+}
+
+.cover__caption__copy h2{
+    margin-top: -20px;
 }
 
 
@@ -230,7 +242,7 @@ a:hover {
 .fieldset {
     margin-bottom: 5px;
     background-color: #8fb339;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
 }
 
@@ -264,7 +276,9 @@ a:hover {
 
 .riepilogo {
     color: #daddd8;
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .submit {
@@ -281,7 +295,10 @@ a:hover {
     height: 50px;
     width: 75%;
     font-size: 18px;
-    font-family: 'Caveat Brush', cursive;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 0;
 }
 
 .line {
@@ -361,6 +378,26 @@ a:hover {
     margin-top: -4px;
 }
 
+.info__text{
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.info__text__contact{
+    padding: 0px 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.copyright{
+    text-align: right;
+    padding: 0 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    line-height: 3mm;
+}
+
 
 /*-----------------------------
 Smartphone
@@ -384,7 +421,7 @@ Smartphone
         display: block;
     }
     .is-open {
-        height: 300px;
+        height: 370px;
         overflow: auto;
     }
     /* Cover */
@@ -407,6 +444,8 @@ Smartphone
     .disponibili {
         margin-top: 0px;
         color: #8fb339;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
     }
     .status__subtitle {
         margin-top: -10px;

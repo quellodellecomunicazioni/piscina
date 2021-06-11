@@ -32,7 +32,8 @@
             <li class="header__menu__item"><a href="agosto.html" onclick="localStorage.setItem('mese',8)">AGOSTO</a>
             </li>
             <hr class="hr">
-            <li class="header__menu__item"><a href="settembre.html" onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
+            <li class="header__menu__item"><a href="settembre.html"
+                    onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
             <hr class="hr">
             <li class="header__menu__item"><a href="info.html">INFO</a></li>
         </ul>
@@ -49,6 +50,7 @@
                 <legend class="legend">RIEPILOGO</legend>
                 <p class="riepilogo" id="data"></p>
                 <p class="riepilogo" id="ora"></p>
+                <p class="riepilogo" id="status"></p>
             </fieldset>
             <fieldset class="fieldset_appartamento">
                 <legend class="legend_appartamento">APPARTAMENTO</legend>
@@ -129,9 +131,9 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
 
-            $(".header__icon-bar").click(function(e) {
+            $(".header__icon-bar").click(function (e) {
 
                 $(".header__menu").toggleClass('is-open');
                 e.preventDefault();
@@ -139,7 +141,6 @@
         });
     </script>
     <script>
-        // inizializzazione, get dei dati di input, algoritmo rand
         const wrapper = document.querySelector('.wrapper'),
             form = wrapper.querySelectorAll('.form'),
             submitInput = form[0].querySelector('input[type="submit"]');
@@ -154,6 +155,7 @@
             list_container = time + month + day
             counter_container = 'c' + list_container
             tmp = JSON.parse(localStorage.getItem(list_container))
+            postazione = JSON.parse(localStorage.getItem('status')).toString()
             if (!tmp) {
                 tmp = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
@@ -166,15 +168,8 @@
                 window.location.href = "stato.html"
             } else {
                 qty = parseInt(localStorage.getItem(counter_container))
-                if (qty >= 11 && qty < 31) {
-                    do {
-                        rand = Math.floor(Math.random() * 20) + 12;
-                    } while (tmp.includes(rand))
-                    tmp[index] = rand
-                } else if (qty < 11) {
-                    do {
-                        rand = Math.floor(Math.random() * 11) + 1;
-                    } while (tmp.includes(rand))
+                if (qty < 31) {
+                    rand = parseInt(postazione)
                     tmp[index] = rand
                 } else {
                     alert("Posti esauriti!")
@@ -187,12 +182,11 @@
                 window.location.href = "stato.html"
             }
         }
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             submitInput.addEventListener('click', getDataForm, false);
         }, false);
     </script>
     <script>
-        // display riepilogo
         day = JSON.parse(localStorage.getItem('giorno')).toString()
         switch (month = JSON.parse(localStorage.getItem('mese')).toString()) {
             case '6':
@@ -215,9 +209,10 @@
         } else if (time == '1') {
             document.getElementById('ora').innerHTML = '14:30-19:00'
         }
+        appartamento = JSON.parse(localStorage.getItem('status')).toString()
+        document.getElementById('status').innerHTML = 'Postazione ' + appartamento
     </script>
     <script>
-        // display posti rimasti
         day = JSON.parse(localStorage.getItem('giorno')).toString()
         month = JSON.parse(localStorage.getItem('mese')).toString()
         time = JSON.parse(localStorage.getItem('orario')).toString()

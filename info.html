@@ -6,6 +6,7 @@
     <title>Eden Pool</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,12 +34,32 @@
             <li class="header__menu__item"><a href="agosto.html" onclick="localStorage.setItem('mese',8)">AGOSTO</a>
             </li>
             <hr class="hr">
-            <li class="header__menu__item"><a href="settembre.html" onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
+            <li class="header__menu__item"><a href="settembre.html"
+                    onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
             <hr class="hr">
             <li class="header__menu__item"><a href="info.html">INFO</a></li>
         </ul>
     </header>
 
+    <section class="white__space__mesi">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+    <section class="white__space__mesi">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+
+    <h1 class="status__title">INFO UTILI</h1>
+    <p class="info__text">Per qualsiasi informazione o chiarimento si prega di fare riferimento al contatto riportato di
+        seguito</p>
+    <p class="info__text__contact">Davide Cattaneo</p>
+    <p class="info__text__contact">+39 3935670750</p>
+    <p class="info__text__contact">davide.cattaneo@datavoicesys.eu</p>
+    <p class="info__text"><a href="download/istruzioni.pdf">SCARICA ISTRUZIONI</a></p>
+
     <section class="white__space">
         <span></span>
         <span></span>
@@ -50,18 +71,15 @@
         <span></span>
     </section>
 
-    <section class="banner2 clearfix">
-        <h1><a href="prenota.html" onclick="localStorage.setItem('orario',0)">MATTINA</a></h1>
-    </section>
-    <section class="banner1 clearfix">
-        <h1><a href="prenota.html" onclick="localStorage.setItem('orario',1)">POMERIGGIO</a></h1>
-    </section>
+    <p class="copyright">Questa applicazione è proprietà di Davide Cattaneo e ogni utilizzo senza espresso consenso è
+        severamente vietato.</p>
+    <p class="copyright"> Copyright © 2021 - Davide Cattaneo</p>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
 
-            $(".header__icon-bar").click(function(e) {
+            $(".header__icon-bar").click(function (e) {
 
                 $(".header__menu").toggleClass('is-open');
                 e.preventDefault();
