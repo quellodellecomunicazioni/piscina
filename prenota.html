@@ -137,6 +137,7 @@
         });
     </script>
     <script>
+        // inizializzazione, get dei dati di input, algoritmo rand
         const wrapper = document.querySelector('.wrapper'),
             form = wrapper.querySelectorAll('.form'),
             submitInput = form[0].querySelector('input[type="submit"]');
@@ -189,6 +190,7 @@
         }, false);
     </script>
     <script>
+        // display riepilogo
         day = JSON.parse(localStorage.getItem('giorno')).toString()
         switch (month = JSON.parse(localStorage.getItem('mese')).toString()) {
             case '6':
@@ -213,6 +215,7 @@
         }
     </script>
     <script>
+        // display posti rimasti
         day = JSON.parse(localStorage.getItem('giorno')).toString()
         month = JSON.parse(localStorage.getItem('mese')).toString()
         time = JSON.parse(localStorage.getItem('orario')).toString()

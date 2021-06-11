@@ -321,7 +321,7 @@ a:hover {
 
 .grid-item {
     background-color: #c7d59f;
-    padding: 15px;
+    padding: 13px;
     font-size: 30px;
     text-align: center;
     color: #fff;
@@ -330,7 +330,7 @@ a:hover {
 
 .grid-item_bottomborder {
     background-color: #c7d59f;
-    padding: 15px;
+    padding: 13px;
     font-size: 30px;
     text-align: center;
     color: #fff;
@@ -341,7 +341,7 @@ a:hover {
 
 .grid-item_nobottomborder {
     background-color: #c7d59f;
-    padding: 15px;
+    padding: 13px;
     font-size: 30px;
     text-align: center;
     color: #fff;
@@ -351,7 +351,7 @@ a:hover {
 
 .grid-item_bottomrightborder {
     background-color: #c7d59f;
-    padding: 15px;
+    padding: 13px;
     font-size: 30px;
     text-align: center;
     color: #fff;
