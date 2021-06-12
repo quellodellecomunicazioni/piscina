@@ -1,7 +1,7 @@
 {
     "background_color": "#fff",
     "description": "Assegnazione ombrelloni",
-    "display": "fullscreen",
+    "display": "standalone",
     "icons": [{
             "src": "./media/icon64.png",
             "sizes": "64x64",
@@ -18,7 +18,7 @@
             "type": "image/png"
         }
     ],
-    "name": "Eden Pool&Restaurant",
-    "short_name": "Eden Pool&Restaurant",
-    "start_url": "index.html"
+    "name": "Eden Pool",
+    "short_name": "Eden Pool",
+    "start_url": "./index.html"
 }
