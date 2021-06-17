@@ -40,15 +40,63 @@
         </ul>
     </header>
 
-    <section class="cover">
-        <div class="cover__filter"></div>
-        <div class="cover__caption">
-            <div class="cover__caption__copy">
-                <h1>Eden Pool&Restaurant</h1>
-                <h2>ASSEGNAZIONE OMBRELLONI</h2>
-            </div>
-        </div>
+    <section class="white__space__mesi">
+        <span></span>
+        <span></span>
+        <span></span>
     </section>
+    <section class="white__space__mesi">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+    <section class="white__space__mesi">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+    <section class="white__space__mesi">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+
+    <div class="cover__caption__copy">
+        <h1>Eden Pool&Restaurant</h1>
+        <h2>ASSEGNAZIONE OMBRELLONI</h2>
+    </div>
+
+    <br>
+
+    <div class="button-container">
+        <a href="./mesi.html" class="button">PRENOTA</a>
+    </div>
+
+    <section class="white__space__mesi">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+    <section class="white__space__mesi">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+    <section class="white__space__mesi">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+    <section class="white__space__mesi">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+
+    <p class="copyright">Questa applicazione è proprietà di Davide Cattaneo e ogni utilizzo senza espresso consenso è severamente vietato.</p>
+    <p class="copyright"> Copyright © 2021 - Davide Cattaneo</p>
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
@@ -63,8 +111,8 @@
         });
     </script>
     <script>
-        async function registerSW(){
-            if('serviceWorker' in navigator){
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
                 try {
                     await navigator.serviceWorker.register('./serviceworker.js')
                 } catch (e) {

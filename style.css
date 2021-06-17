@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Raleway&family=Satisfy&display=swap');
-
 html,
 body {
     height: 100%;
@@ -23,13 +22,21 @@ general
 /* COMMON */
 
 .button {
-    display: inline-block;
-    background: #daddd8;
+    background: #fff;
     color: #000;
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 20px;
+    width: 40%;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .button:visited {
@@ -145,21 +152,21 @@ a:hover {
 }
 
 .cover__caption__copy {
-    display: table-cell;
     vertical-align: middle;
     text-align: center;
     color: #fff;
     font-family: 'Caveat Brush', cursive;
 }
 
-.cover__caption__copy h1{
+.cover__caption__copy h1 {
     font-family: 'Satisfy';
     color: #8fb339;
     font-size: 38px;
 }
 
-.cover__caption__copy h2{
+.cover__caption__copy h2 {
     margin-top: -20px;
+    color: #4b5842;
 }
 
 
@@ -378,19 +385,19 @@ a:hover {
     margin-top: -4px;
 }
 
-.info__text{
+.info__text {
     padding: 10px 20px;
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
 
-.info__text__contact{
+.info__text__contact {
     padding: 0px 20px;
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
 
-.copyright{
+.copyright {
     text-align: right;
     padding: 0 20px;
     font-family: 'Raleway', sans-serif;
