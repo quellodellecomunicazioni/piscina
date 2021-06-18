@@ -22,15 +22,14 @@ general
 /* COMMON */
 
 .button {
-    background: #fff;
-    color: #4b5842;
+    background: #4b5842;
+    color: #fff;
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 20px;
-    width: 40%;
+    width: 50%;
     font-family: 'Caveat Brush', cursive;
-    border: 2px solid #4b5842;
 }
 
 .button-container {
@@ -41,7 +40,7 @@ general
 }
 
 .button:visited {
-    color: #4b5842;
+    color: #fff;
 }
 
 p {

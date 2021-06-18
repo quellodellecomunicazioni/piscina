@@ -14,7 +14,7 @@
 <body>
 
     <header class="header clearfix">
-        <a href="index.html" class="header__logo">Eden Pool&Restaurant</a>
+        <a href="index.html" class="header__logo">Eden</a>
         <a href="" class="header__icon-bar">
             <span></span>
             <span></span>
@@ -32,8 +32,7 @@
             <li class="header__menu__item"><a href="agosto.html" onclick="localStorage.setItem('mese',8)">AGOSTO</a>
             </li>
             <hr class="hr">
-            <li class="header__menu__item"><a href="settembre.html"
-                    onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
+            <li class="header__menu__item"><a href="settembre.html" onclick="localStorage.setItem('mese',9)">SETTEMBRE</a></li>
             <hr class="hr">
             <li class="header__menu__item"><a href="info.html">INFO</a></li>
         </ul>
@@ -131,9 +130,9 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
 
-            $(".header__icon-bar").click(function (e) {
+            $(".header__icon-bar").click(function(e) {
 
                 $(".header__menu").toggleClass('is-open');
                 e.preventDefault();
@@ -182,7 +181,7 @@
                 window.location.href = "stato.html"
             }
         }
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             submitInput.addEventListener('click', getDataForm, false);
         }, false);
     </script>
